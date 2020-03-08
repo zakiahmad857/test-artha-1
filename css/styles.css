@@ -358,13 +358,12 @@ figure.effect-lily:hover p {
 	}
 }
 
-/* 41.5em cenah */
 @media screen and (max-width: 991px) {
 	.grid figure {
 		width: 100%;
+    height: 500px;
 	}
 }
-
 
 /* CLIENT */
 #client{
