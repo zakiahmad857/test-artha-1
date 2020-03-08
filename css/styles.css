@@ -1,0 +1,567 @@
+
+body{
+  text-align: center;
+  margin: 0;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 200%;
+}
+
+.container-fluid{
+  margin: 0;
+  padding: 0;
+}
+
+.heading{
+  font-weight: bold;
+}
+
+@media (max-width: 991px){
+  .heading{
+    font-size: 270%;
+  }
+}
+
+/* LOADER */
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+    width: 100px;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.loader-hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+/* NAVBAR */
+#navbarArtha{
+  /* padding-left: 10%;
+  padding-right: 10%;
+
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  overflow: inherit; */
+}
+
+.hide {
+    transform: translateY(-50px);
+}
+
+.navbar{
+  background-color: #000;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* top: 0; */
+  /* width: 100%; */
+  display: block;
+  transition: top 0.3s;
+  /* overflow: inherit; */
+  opacity: 0.9;
+}
+
+.nav-item{
+  padding: 0 0 0 50px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.navbar-brand img{
+  width: 30px;
+  padding: 0;
+}
+
+/* TITLE */
+#title{
+  background-color: #91A1D5;
+  min-height: 100vh;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  padding-top: 5%;
+  width: 55%;
+}
+
+@media (max-width: 991px){
+  #title{
+    padding: 0;
+  }
+
+  .logo{
+    width: 900px;
+  }
+}
+
+/* WHAT WE DO */
+#core{
+  background-color: #eee;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10%;
+}
+
+#core p{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 25px;
+  font-size: 18px;
+}
+
+.work-img{
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.heading-unik{
+  color: #5a5c95;
+}
+
+.sub-heading{
+
+}
+
+p{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 25px;
+  font-size: 16px;
+}
+
+@media (max-width: 991px){
+  #core{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .work-img{
+    width: 900px;
+  }
+
+  #core .heading{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #core p{
+    padding-top: 50px;
+    font-size: 34px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* PROJECT */
+#project{
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #FBC800;
+}
+
+#project .heading {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  /* font-size: 200%; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+@media (max-width: 991px){
+  #project .heading{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* GRID PROJECT */
+.grid {
+	overflow: hidden;
+	margin: 0;
+  padding: 3em 0 0 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+
+.grid figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+  margin: -0.1em -0.14em -0.35em;
+  width: 33.333%;
+	height: 400px;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+/* Effects */
+
+figure.effect-lily img {
+	width: -webkit-calc(100% + 50px);
+	width: calc(100% + 50px);
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-40px,0, 0);
+	transform: translate3d(-40px,0,0);
+}
+
+figure.effect-lily figcaption {
+	top: auto;
+	bottom: 0;
+	height: 50%;
+	text-align: left;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-lily h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+	color: rgba(255,255,255,0.6);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+	-webkit-transform: translate3d(-1.5rem,0,0);
+	transform: translate3d(-1.5rem,0,0);
+}
+
+figure.effect-lily:hover p {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+}
+
+/* @media screen and (max-width: 25em) {
+
+	.codrops-header {
+		font-size: 75%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+} */
+
+@media screen and (max-width: 69.5em) {
+	.grid figure {
+		width: 50%;
+	}
+	.grid figure figcaption {
+		font-size: 90%;
+	}
+}
+
+/* 41.5em cenah */
+@media screen and (max-width: 991px) {
+	.grid figure {
+		width: 100%;
+	}
+}
+
+
+/* CLIENT */
+#client{
+  background-color: #eee;
+  padding: 100px;
+}
+
+#client .heading{
+  padding-bottom: 50px;
+  /* font-size: 200%; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.box-client{
+  display: flex;
+  align-items: center;
+  padding: 25px 40px;
+}
+
+.logo-client{
+  width: 200px;
+	opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.logo-client:hover{
+	opacity: 1;
+}
+
+@media (max-width: 991px ) {
+  #core{
+    height: 100%;
+  }
+}
+
+/* TEAM */
+#team{
+  background-color: #91A1D5;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 15% 50px;
+}
+
+#team h4{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+#team p{
+  padding-top: 0;
+}
+
+.team-all{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  padding-top: 75px;
+}
+
+.team-paket{
+  margin: 0 0 2em;
+}
+
+.team-paket figure{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-paket figure img{
+  margin: auto auto 15px;
+}
+
+.team-paket figure figcaption {
+  margin-top: 0;
+  padding-bottom: 20px;
+}
+
+.team-icon{
+  width: 150px;
+}
+
+.orang{
+  width: 100px;
+}
+
+@media (max-width: 991px) {
+  .team-icon{
+    width: 350px;
+  }
+  .orang{
+    width: 300px;
+  }
+  #team h4{
+    font-size: 34px;
+  }
+  #team p{
+    font-size: 32px;
+  }
+}
+
+/* FOOTER */
+#contact{
+  background-color: #FBC800;
+}
+
+#contact img{
+  width: 200px;
+  margin: auto;
+}
+
+#contact p{
+  margin-bottom: 0;
+  width: 75%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  padding-top: 0;
+}
+
+.fab{
+  margin-right: 7%;
+  color: black;
+}
+
+.fab:hover{
+  transform: scale(1.25);
+}
+
+.footer{
+  padding: 20px 50px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+.box-footer{
+  display: flex;
+  align-items: center;
+}
+
+h6{
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+@media (max-width: 991px ) {
+  .footer{
+    text-align: center;
+  }
+
+  #contact img{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 100%;
+    margin: auto;
+  }
+
+  #contact p{
+    width: 100%;
+    font-size: 32px;
+  }
+
+  #contact a{
+    font-size: 25px;
+  }
+
+  .footer-content{
+    padding-bottom: 30px;
+  }
+
+  h6{
+    margin-top: 16px;
+    font-size: 34px;
+  }
+
+  .fab{
+    margin: auto;
+  }
+
+  .fa-instagram{
+    margin-right: 15px;
+  }
+
+  .fa-youtube{
+    margin-right: 15px;
+  }
+
+  .fa-linkedin{
+    margin-right: 15px;
+  }
+}
