@@ -385,10 +385,6 @@ h6{
   .heading{
     font-size: 270%;
   }
-  .navbar{
-    height: 120px;
-  }
-
   .navbar-brand img{
     width: 50px;
     padding: 0;
@@ -419,7 +415,7 @@ h6{
 	}
 
   .grid figure h2 {
-  	font-size: 250%;  
+  	font-size: 250%;
   }
 
   /* Team */
