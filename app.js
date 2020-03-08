@@ -30,12 +30,12 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    $("#navbarArtha").css({
+    $(".navbar").css({
       top: '0'
     });
   } else {
-    $("#navbarArtha").css({
-      top: '-60px'
+    $(".navbar").css({
+      top: '-125px'
     });
   }
   prevScrollpos = currentScrollPos;
@@ -73,10 +73,10 @@ $(document).ready(function() {
 
   $("#project4-all").hover(
     function() {
-      $("#project4-img").attr("src", "images/project/sf.gif");
+      $("#project4-img").attr("src", "images/project/animatronic.gif");
     },
     function() {
-      $("#project4-img").attr("src", "images/project/sf.png");
+      $("#project4-img").attr("src", "images/project/animatronic.png");
     }
   );
 
