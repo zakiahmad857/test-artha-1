@@ -280,15 +280,6 @@ figure.effect-lily:hover p {
   padding: 100px 15% 50px;
 }
 
-#team h4{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-}
-
-#team p{
-  padding-top: 0;
-}
-
 .team-all{
   display: -webkit-box;
   display: -moz-box;
@@ -316,13 +307,25 @@ figure.effect-lily:hover p {
   padding-bottom: 20px;
 }
 
-.team-icon{
-  width: 150px;
+@media screen and (min-width: 700px){
+  .team-icon{
+    width: 150px;
+  }
+
+  .orang{
+    width: 100px;
+  }
+
+  #team h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  #team p{
+    padding-top: 0;
+  }
 }
 
-.orang{
-  width: 100px;
-}
 
 /* FOOTER */
 #contact{
@@ -380,7 +383,7 @@ h6{
 	}
 }
 
-@media screen and (min-width: 991px){
+@media (min-width: 1000px){
   .team-icon{
     width: 200px;
   }
