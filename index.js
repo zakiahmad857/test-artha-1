@@ -91,10 +91,10 @@ $(document).ready(function() {
 
   $("#project6-all").hover(
     function() {
-      $("#project6-img").attr("src", "images/project/sound-experience.gif");
+      $("#project6-img").attr("src", "images/project/virtual-exhibition.gif");
     },
     function() {
-      $("#project6-img").attr("src", "images/project/sound-experience.png");
+      $("#project6-img").attr("src", "images/project/virtual-exhibition.png");
     }
   );
 
